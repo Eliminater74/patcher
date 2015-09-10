@@ -5,6 +5,7 @@
 # frameworks/av:
 cd frameworks/av
 git reset --hard
+wget https://github.com/CyanogenMod/android_frameworks_av/commit/523b5c5ee976cb8f0854dcccf58ef3bc0b276972.patch && patch -p1 < 523b5c5ee976cb8f0854dcccf58ef3bc0b276972.patch
 wget https://github.com/CyanogenMod/android_frameworks_av/commit/df31a3368272dcf5671a1ca569d4769c205debad.patch && patch -p1 < df31a3368272dcf5671a1ca569d4769c205debad.patch
 git clean -f -d
 
@@ -25,4 +26,3 @@ cd ../../../system/core
 git reset --hard
 wget https://github.com/sultanxda/android_system_core/commit/d19be9fd37f78524cae0cac302ce2b51f3fcfe5c.patch && patch -p1 < d19be9fd37f78524cae0cac302ce2b51f3fcfe5c.patch
 git clean -f -d
-cd ../../
